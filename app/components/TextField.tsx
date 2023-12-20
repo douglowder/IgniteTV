@@ -1,5 +1,6 @@
 import React, { ComponentType, forwardRef, Ref, useImperativeHandle, useRef } from "react"
 import {
+  Platform,
   StyleProp,
   TextInput,
   TextInputProps,
@@ -166,6 +167,8 @@ export const TextField = forwardRef(function TextField(props: TextFieldProps, re
 
   useImperativeHandle(ref, () => input.current as TextInput)
 
+  const isMultiline = (TextInput.multiline && !Platform.isTV) ?? false
+
   return (
     <TouchableOpacity
       activeOpacity={1}
@@ -190,7 +193,7 @@ export const TextField = forwardRef(function TextField(props: TextFieldProps, re
             style={$leftAccessoryStyle}
             status={status}
             editable={!disabled}
-            multiline={TextInputProps.multiline ?? false}
+            multiline={isMultiline}
           />
         )}
 
@@ -203,6 +206,7 @@ export const TextField = forwardRef(function TextField(props: TextFieldProps, re
           {...TextInputProps}
           editable={!disabled}
           style={$inputStyles}
+          multiline={isMultiline}
         />
 
         {!!RightAccessory && (
@@ -210,7 +214,7 @@ export const TextField = forwardRef(function TextField(props: TextFieldProps, re
             style={$rightAccessoryStyle}
             status={status}
             editable={!disabled}
-            multiline={TextInputProps.multiline ?? false}
+            multiline={isMultiline}
           />
         )}
       </View>
@@ -236,8 +240,8 @@ const $labelStyle: TextStyle = {
 const $inputWrapperStyle: ViewStyle = {
   flexDirection: "row",
   alignItems: "flex-start",
-  borderWidth: 1,
-  borderRadius: 4,
+  borderWidth: spacing._1,
+  borderRadius: spacing._4,
   backgroundColor: colors.palette.neutral200,
   borderColor: colors.palette.neutral400,
   overflow: "hidden",
@@ -248,8 +252,8 @@ const $inputStyle: TextStyle = {
   alignSelf: "stretch",
   fontFamily: typography.primary.normal,
   color: colors.text,
-  fontSize: 16,
-  height: 24,
+  fontSize: spacing._16,
+  height: spacing._24,
   // https://github.com/facebook/react-native/issues/21720#issuecomment-532642093
   paddingVertical: 0,
   paddingHorizontal: 0,
@@ -263,13 +267,13 @@ const $helperStyle: TextStyle = {
 
 const $rightAccessoryStyle: ViewStyle = {
   marginEnd: spacing.xs,
-  height: 40,
+  height: spacing._40,
   justifyContent: "center",
   alignItems: "center",
 }
 const $leftAccessoryStyle: ViewStyle = {
   marginStart: spacing.xs,
-  height: 40,
+  height: spacing._40,
   justifyContent: "center",
   alignItems: "center",
 }
