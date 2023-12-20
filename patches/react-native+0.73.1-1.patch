@@ -1,0 +1,21 @@
+diff --git a/node_modules/react-native/React/Fabric/Mounting/ComponentViews/View/RCTViewComponentView.h b/node_modules/react-native/React/Fabric/Mounting/ComponentViews/View/RCTViewComponentView.h
+index e318594..7107a8c 100644
+--- a/node_modules/react-native/React/Fabric/Mounting/ComponentViews/View/RCTViewComponentView.h
++++ b/node_modules/react-native/React/Fabric/Mounting/ComponentViews/View/RCTViewComponentView.h
+@@ -19,6 +19,9 @@
+ 
+ NS_ASSUME_NONNULL_BEGIN
+ 
++#ifndef _RCT_VIEW_COMPONENT_VIEW_
++#define _RCT_VIEW_COMPONENT_VIEW_
++
+ /**
+  * UIView class for <View> component.
+  */
+@@ -90,4 +93,6 @@ NS_ASSUME_NONNULL_BEGIN
+ 
+ @end
+ 
++#endif // _RCT_VIEW_COMPONENT_VIEW_
++
+ NS_ASSUME_NONNULL_END
