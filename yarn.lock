@@ -2187,6 +2187,13 @@
     prompts "^2.4.2"
     semver "^7.5.2"
 
+"@react-native-tvos/config-tv@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@react-native-tvos/config-tv/-/config-tv-0.0.4.tgz#b73b2f8844d3a1e8952b86e45bfde09110820252"
+  integrity sha512-7R0dKIQ4W/JVpig1FrfrJjyZuxZ3qFjkyw6VhklrdICrkcOZE8N9WmWEZXDLKpT9Zc8U7A44BfrjkBOvpK3gKw==
+  dependencies:
+    getenv "^1.0.0"
+
 "@react-native/assets-registry@^0.73.1", "@react-native/assets-registry@~0.73.1":
   version "0.73.1"
   resolved "https://registry.yarnpkg.com/@react-native/assets-registry/-/assets-registry-0.73.1.tgz#e2a6b73b16c183a270f338dc69c36039b3946e85"
@@ -2959,16 +2966,6 @@ aggregate-error@^3.0.0:
   dependencies:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
-
-ajv@8.11.0:
-  version "8.11.0"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.11.0.tgz#977e91dd96ca669f54a11e23e378e33b884a565f"
-  integrity sha512-wGgprdCvMalC0BztXvitD2hC04YffAvtsUn93JbGXYLAtCUO4xd17mCCZQxUOItiBwZvJScWo8NIvQMQ71rdpg==
-  dependencies:
-    fast-deep-equal "^3.1.1"
-    json-schema-traverse "^1.0.0"
-    require-from-string "^2.0.2"
-    uri-js "^4.2.2"
 
 ajv@^6.10.0, ajv@^6.12.4:
   version "6.12.6"
@@ -4734,41 +4731,6 @@ expo-constants@~15.4.0:
   dependencies:
     "@expo/config" "~8.5.0"
 
-expo-dev-client@~3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/expo-dev-client/-/expo-dev-client-3.3.3.tgz#4c5c02af46b66127accb5d616fccaa1fdccf01a1"
-  integrity sha512-dLRk70nQ9LuXtV8cDr7eGtg3xD8tKiGX0cU0vVXYixJ+i95Jur3K2pZGlyZ7cVW36L0Bh4v1bGjE19MP+bf5nA==
-  dependencies:
-    expo-dev-launcher "3.6.1"
-    expo-dev-menu "4.5.2"
-    expo-dev-menu-interface "1.7.1"
-    expo-manifests "~0.13.0"
-    expo-updates-interface "~0.15.0"
-
-expo-dev-launcher@3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/expo-dev-launcher/-/expo-dev-launcher-3.6.1.tgz#93c37ecf71f9f76e7eb0157a480ced6b627512b2"
-  integrity sha512-ZT2yzACz/jl+pQ9/abIPNevs9t659//mlHO/kuFF6Z5IaLyVhp69SgU+2xBq0/TIBl+76PinCLTBtCVMkbNcNw==
-  dependencies:
-    ajv "8.11.0"
-    expo-dev-menu "4.5.2"
-    expo-manifests "~0.13.0"
-    resolve-from "^5.0.0"
-    semver "^7.5.3"
-
-expo-dev-menu-interface@1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/expo-dev-menu-interface/-/expo-dev-menu-interface-1.7.1.tgz#de48913b0e338671a31dd69bbcf1772e8f2d3439"
-  integrity sha512-EHerVdLGMhcmlT+4lugzALBzoexLj1KJMakQm5lDvBPWGBwAJ1Tu4frkD1e+XbTun+9zpVhbshMoPqPb6F0Qig==
-
-expo-dev-menu@4.5.2:
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/expo-dev-menu/-/expo-dev-menu-4.5.2.tgz#4c5b242e195330c94839d3741dcc41b842cc1eba"
-  integrity sha512-Nkbz8ROkAAOXQquvVr7yuv556Vj7E9fGB00mtU+x8OIWVSQi0nVorHYS12oKUDoLNDpA8ayKOwfcroIovAsVSw==
-  dependencies:
-    expo-dev-menu-interface "1.7.1"
-    semver "^7.5.3"
-
 expo-file-system@~16.0.0, expo-file-system@~16.0.2:
   version "16.0.2"
   resolved "https://registry.yarnpkg.com/expo-file-system/-/expo-file-system-16.0.2.tgz#c0f482dd0bea59ea6331abf46ec319bf2ac9e110"
@@ -4780,11 +4742,6 @@ expo-font@~11.10.0:
   integrity sha512-yqlsoOKWiYv8aBMFqheHSUKKEY/lrB7zHjzDc60OF1xGa1q8kh7mKQVwSaRMS0G77GEUvvk8Vb/uKw51KY1kGA==
   dependencies:
     fontfaceobserver "^2.1.0"
-
-expo-json-utils@~0.12.0:
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/expo-json-utils/-/expo-json-utils-0.12.1.tgz#415704d6c91016a4d6482b83b87c42eb03b74aea"
-  integrity sha512-iZP3Wiywgefgk1QDtGiV5CihQ7lB/iFp04Oelbt/NNq1S6CiYX10LD+0oqf5SCW9vr3MXT1zfkA4egb4GrWfAw==
 
 expo-keep-awake@~12.8.0:
   version "12.8.0"
@@ -4805,14 +4762,6 @@ expo-localization@~14.8.1:
   integrity sha512-0Gv7qhgl4HVxXd1omaKPLOUDPw0D9rXnyrptGav2HVbFmAr1334CJKWfRBmW9XhMDknEUhOnh3F3WDPb/6SkLg==
   dependencies:
     rtl-detect "^1.0.2"
-
-expo-manifests@~0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/expo-manifests/-/expo-manifests-0.13.0.tgz#20f163f84a414c6c50b8079e5fd0685d7c5b8ce2"
-  integrity sha512-N3adl3edSga3jdatLXjXiltdSwQkB1rOI5uyGEE5OwR/bpxc/5OUgHdRZjJgY6jJmVY4BCAiw0RXFoVRBbgE0Q==
-  dependencies:
-    "@expo/config" "~8.5.0"
-    expo-json-utils "~0.12.0"
 
 expo-modules-autolinking@1.9.0:
   version "1.9.0"
@@ -4844,11 +4793,6 @@ expo-status-bar@~1.11.1:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.11.1.tgz#a11318741d361048c11db2b16c4364a79a74af30"
   integrity sha512-ddQEtCOgYHTLlFUe/yH67dDBIoct5VIULthyT3LRJbEwdpzAgueKsX2FYK02ldh440V87PWKCamh7R9evk1rrg==
-
-expo-updates-interface@~0.15.0:
-  version "0.15.1"
-  resolved "https://registry.yarnpkg.com/expo-updates-interface/-/expo-updates-interface-0.15.1.tgz#b0242fa7ba05768ada2f0faf83b90aa8b8fa65d7"
-  integrity sha512-B42oOB0pw4TaPoOGE/yzt9ggwNNxo3PEJRU0kIOurQ8hW5UEUC8cAbGQDYWGbTyNGp8gLBG+T2MCg+YYaCYJUw==
 
 expo@^50.0.0-preview.6:
   version "50.0.0-preview.6"
@@ -7911,7 +7855,7 @@ rc@~1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-devtools-core@^4.27.7:
+react-devtools-core@^4.28.4:
   version "4.28.5"
   resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.28.5.tgz#c8442b91f068cdf0c899c543907f7f27d79c2508"
   integrity sha512-cq/o30z9W2Wb4rzBefjv5fBalHU0rJGZCHAkf/RHSBWSSYwh8PlQTqqOJmgIIbBtpj27T6FIPXeomIjZtCNVqA==
@@ -8007,10 +7951,10 @@ react-native-web@~0.19.6:
     postcss-value-parser "^4.2.0"
     styleq "^0.1.3"
 
-react-native@0.73.1:
-  version "0.73.1"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.73.1.tgz#5eafaa7e54feeab8b55e8b8e4efc4d21052a4fff"
-  integrity sha512-nLl9O2yKRh1nMXwsk4SUiD0ddd19RqlKgNU9AU8bTK/zD2xwnVOG56YK1/22SN67niWyoeG83vVg1eTk+S6ReA==
+"react-native@npm:react-native-tvos@^0.73.1-1":
+  version "0.73.1-1"
+  resolved "https://registry.yarnpkg.com/react-native-tvos/-/react-native-tvos-0.73.1-1.tgz#2c7e1b1614ae14a37f82fe071261bd9f2ff6f6b3"
+  integrity sha512-74LTTOm05QrFi5EIdqttOAoIj2GYJW+IYuschBa6kLUDfqo3DOVJJk6cqtvkrjqG4ZPxdgNSIKPhxgpJbPIo0A==
   dependencies:
     "@jest/create-cache-key-function" "^29.6.3"
     "@react-native-community/cli" "12.3.0"
@@ -8040,7 +7984,7 @@ react-native@0.73.1:
     nullthrows "^1.1.1"
     pretty-format "^26.5.2"
     promise "^8.3.0"
-    react-devtools-core "^4.27.7"
+    react-devtools-core "^4.28.4"
     react-refresh "^0.14.0"
     react-shallow-renderer "^16.15.0"
     regenerator-runtime "^0.13.2"
