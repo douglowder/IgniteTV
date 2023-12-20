@@ -129,6 +129,6 @@ const $logoContainer: ViewStyle = {
 }
 
 const $logo: ImageStyle = {
-  height: 38,
-  width: 38,
+  height: spacing._38,
+  width: spacing._38,
 }

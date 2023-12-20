@@ -39,7 +39,7 @@ import { colors, spacing } from "../theme"
 import { delay } from "../utils/delay"
 import { openLinkInBrowser } from "../utils/openLinkInBrowser"
 
-const ICON_SIZE = 14
+const ICON_SIZE = spacing._14
 
 const rnrImage1 = require("../../assets/images/demo/rnr-image-1.png")
 const rnrImage2 = require("../../assets/images/demo/rnr-image-2.png")
@@ -318,12 +318,12 @@ const $heading: ViewStyle = {
 const $item: ViewStyle = {
   padding: spacing.md,
   marginTop: spacing.md,
-  minHeight: 120,
+  minHeight: spacing._120,
 }
 
 const $itemThumbnail: ImageStyle = {
   marginTop: spacing.sm,
-  borderRadius: 50,
+  borderRadius: spacing._50,
   alignSelf: "flex-start",
 }
 
@@ -355,7 +355,7 @@ const $metadataText: TextStyle = {
 }
 
 const $favoriteButton: ViewStyle = {
-  borderRadius: 17,
+  borderRadius: spacing._17,
   marginTop: spacing.md,
   justifyContent: "flex-start",
   backgroundColor: colors.palette.neutral300,
@@ -363,7 +363,7 @@ const $favoriteButton: ViewStyle = {
   paddingHorizontal: spacing.md,
   paddingTop: spacing.xxxs,
   paddingBottom: 0,
-  minHeight: 32,
+  minHeight: spacing._32,
   alignSelf: "flex-start",
 }
 
