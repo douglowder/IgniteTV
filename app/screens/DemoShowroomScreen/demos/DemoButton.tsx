@@ -2,13 +2,13 @@
 import React from "react"
 import { ImageStyle, TextStyle, View, ViewStyle } from "react-native"
 import { Button, Icon, Text } from "../../../components"
-import { colors, typography } from "../../../theme"
+import { colors, spacing, typography } from "../../../theme"
 import { Demo } from "../DemoShowroomScreen"
 import { DemoDivider } from "../DemoDivider"
 import { DemoUseCase } from "../DemoUseCase"
 
-const $iconStyle: ImageStyle = { width: 30, height: 30 }
-const $customButtonStyle: ViewStyle = { backgroundColor: colors.error, height: 100 }
+const $iconStyle: ImageStyle = { width: spacing._30, height: spacing._30 }
+const $customButtonStyle: ViewStyle = { backgroundColor: colors.error, height: spacing._100 }
 const $customButtonPressedStyle: ViewStyle = { backgroundColor: colors.error }
 const $customButtonTextStyle: TextStyle = {
   color: colors.error,

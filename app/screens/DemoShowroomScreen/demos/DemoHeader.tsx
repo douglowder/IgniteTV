@@ -2,7 +2,7 @@
 import React from "react"
 import { TextStyle, View, ViewStyle } from "react-native"
 import { Header, Icon } from "../../../components"
-import { colors } from "../../../theme"
+import { colors, spacing } from "../../../theme"
 import { Demo } from "../DemoShowroomScreen"
 import { DemoDivider } from "../DemoDivider"
 import { DemoUseCase } from "../DemoUseCase"
@@ -40,9 +40,9 @@ export const DemoHeader: Demo = {
       description="You can easily pass in icons to the left or right action components."
     >
       <Header title="Left Icon" leftIcon="ladybug" safeAreaEdges={[]} />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <Header title="Right Icon" rightIcon="ladybug" safeAreaEdges={[]} />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <Header title="Both Icons" leftIcon="ladybug" rightIcon="ladybug" safeAreaEdges={[]} />
     </DemoUseCase>,
 
@@ -55,7 +55,7 @@ export const DemoHeader: Demo = {
         leftTx="demoShowroomScreen.demoHeaderTxExample"
         safeAreaEdges={[]}
       />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <Header title="Via `rightText`" rightText="Yay" safeAreaEdges={[]} />
     </DemoUseCase>,
 
@@ -83,7 +83,7 @@ export const DemoHeader: Demo = {
       description="Title can be forced to stay in center (default) but may be cut off if it's too long. You can optionally make it adjust to the action buttons."
     >
       <Header title="Centered Title" leftIcon="ladybug" rightText="Hooray" safeAreaEdges={[]} />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <Header
         title="Flex Title"
         titleMode="flex"
@@ -95,15 +95,15 @@ export const DemoHeader: Demo = {
 
     <DemoUseCase name="Styling" description="The component can be styled easily.">
       <Header title="Styled Title" titleStyle={$customTitle} safeAreaEdges={[]} />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <Header
         title="Styled Wrapper"
         titleStyle={$customWhiteTitle}
         backgroundColor={colors.error}
-        style={{ height: 35 }}
+        style={{ height: spacing._35 }}
         safeAreaEdges={[]}
       />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <Header
         title="Tinted Icons"
         titleStyle={$customWhiteTitle}

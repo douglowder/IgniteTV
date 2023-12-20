@@ -37,13 +37,13 @@ export const DemoToggle: Demo = {
         label="`checkbox` variant"
         helper="This can be used for a single on/off input."
       />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <ControlledToggle
         variant="radio"
         label="`radio` variant"
         helper="Use this when you have multiple options."
       />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <ControlledToggle
         variant="switch"
         label="`switch` variant"
@@ -95,7 +95,7 @@ export const DemoToggle: Demo = {
         Error status - use when there is an error
       </Text>
 
-      <DemoDivider size={24} style={{ width: "100%" }} />
+      <DemoDivider size={spacing._24} style={{ width: "100%" }} />
 
       <ControlledToggle
         variant="checkbox"
@@ -138,7 +138,7 @@ export const DemoToggle: Demo = {
         label="Via `label` prop"
         helper="Via `helper` prop."
       />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <ControlledToggle
         variant="radio"
         value
@@ -147,21 +147,21 @@ export const DemoToggle: Demo = {
         helperTx="demoShowroomScreen.demoViaSpecifiedTxProp"
         helperTxOptions={{ prop: "helper" }}
       />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <ControlledToggle
         variant="checkbox"
         value
         label="Supports multiline - Nulla proident consectetur labore sunt ea labore. "
         editable={false}
       />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <ControlledToggle
         variant="radio"
         value
         label="You can change sides - Laborum labore adipisicing in eu ipsum deserunt."
         labelPosition="left"
       />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <ControlledToggle
         variant="checkbox"
         value
@@ -169,7 +169,7 @@ export const DemoToggle: Demo = {
         checkboxIcon="ladybug"
         label="Pass in a custom checkbox icon."
       />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <ControlledToggle
         value
         variant="switch"
@@ -178,7 +178,7 @@ export const DemoToggle: Demo = {
         status="error"
         helper="By default, this option doesn't use `Text` since depending on the font, the on/off characters might look weird. Customize as needed."
       />
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
       <ControlledToggle
         value
         variant="switch"
@@ -193,8 +193,8 @@ export const DemoToggle: Demo = {
         variant="checkbox"
         containerStyle={$centeredOneThirdCol}
         inputOuterStyle={{
-          width: 50,
-          height: 50,
+          width: spacing._50,
+          height: spacing._50,
           backgroundColor: colors.palette.accent300,
           borderColor: colors.palette.accent500,
         }}
@@ -203,9 +203,9 @@ export const DemoToggle: Demo = {
         variant="radio"
         containerStyle={$centeredOneThirdCol}
         inputOuterStyle={{
-          width: 50,
-          height: 50,
-          borderRadius: 25,
+          width: spacing._50,
+          height: spacing._50,
+          borderRadius: spacing._25,
           backgroundColor: colors.palette.accent300,
           borderColor: colors.palette.accent500,
         }}
@@ -214,9 +214,9 @@ export const DemoToggle: Demo = {
         variant="switch"
         containerStyle={$centeredOneThirdCol}
         inputOuterStyle={{
-          width: 70,
-          height: 50,
-          borderRadius: 25,
+          width: spacing._70,
+          height: spacing._50,
+          borderRadius: spacing._25,
           backgroundColor: colors.palette.accent300,
           borderColor: colors.palette.accent500,
         }}
@@ -232,8 +232,8 @@ export const DemoToggle: Demo = {
         variant="checkbox"
         containerStyle={$centeredOneThirdCol}
         inputOuterStyle={{
-          width: 50,
-          height: 50,
+          width: spacing._50,
+          height: spacing._50,
           backgroundColor: colors.palette.accent300,
           borderColor: colors.palette.accent500,
         }}
@@ -246,9 +246,9 @@ export const DemoToggle: Demo = {
         variant="radio"
         containerStyle={$centeredOneThirdCol}
         inputOuterStyle={{
-          width: 50,
-          height: 50,
-          borderRadius: 25,
+          width: spacing._50,
+          height: spacing._50,
+          borderRadius: spacing._25,
           backgroundColor: colors.palette.accent300,
           borderColor: colors.palette.accent500,
         }}
@@ -261,16 +261,16 @@ export const DemoToggle: Demo = {
         variant="switch"
         containerStyle={$centeredOneThirdCol}
         inputOuterStyle={{
-          width: 70,
-          height: 50,
-          borderRadius: 25,
+          width: spacing._70,
+          height: spacing._50,
+          borderRadius: spacing._25,
           backgroundColor: colors.palette.accent300,
           borderColor: colors.palette.accent500,
         }}
         inputInnerStyle={{
           backgroundColor: colors.palette.accent500,
-          paddingLeft: 10,
-          paddingRight: 10,
+          paddingLeft: spacing._10,
+          paddingRight: spacing._10,
         }}
       />
       <Text preset="formHelper" style={$centeredText}>
@@ -285,8 +285,8 @@ export const DemoToggle: Demo = {
         checkboxIcon="ladybug"
         containerStyle={$centeredOneThirdCol}
         inputOuterStyle={{
-          width: 50,
-          height: 50,
+          width: spacing._50,
+          height: spacing._50,
           backgroundColor: colors.palette.accent300,
           borderColor: colors.palette.accent500,
         }}
@@ -295,8 +295,8 @@ export const DemoToggle: Demo = {
         }}
         inputDetailStyle={{
           tintColor: colors.tint,
-          height: 35,
-          width: 35,
+          height: spacing._35,
+          width: spacing._35,
         }}
       />
       <ControlledToggle
@@ -304,9 +304,9 @@ export const DemoToggle: Demo = {
         variant="radio"
         containerStyle={$centeredOneThirdCol}
         inputOuterStyle={{
-          width: 50,
-          height: 50,
-          borderRadius: 25,
+          width: spacing._50,
+          height: spacing._50,
+          borderRadius: spacing._25,
           backgroundColor: colors.palette.accent300,
           borderColor: colors.palette.accent500,
         }}
@@ -315,9 +315,9 @@ export const DemoToggle: Demo = {
         }}
         inputDetailStyle={{
           backgroundColor: colors.tint,
-          height: 36,
-          width: 36,
-          borderRadius: 18,
+          height: spacing._36,
+          width: spacing._36,
+          borderRadius: spacing._18,
         }}
       />
 
@@ -326,22 +326,22 @@ export const DemoToggle: Demo = {
         variant="switch"
         containerStyle={$centeredOneThirdCol}
         inputOuterStyle={{
-          width: 70,
-          height: 50,
-          borderRadius: 25,
+          width: spacing._70,
+          height: spacing._50,
+          borderRadius: spacing._25,
           backgroundColor: colors.palette.accent300,
           borderColor: colors.palette.accent500,
         }}
         inputInnerStyle={{
           backgroundColor: colors.tint,
-          paddingLeft: 10,
-          paddingRight: 10,
+          paddingLeft: spacing._10,
+          paddingRight: spacing._10,
         }}
         inputDetailStyle={{
           backgroundColor: colors.palette.accent300,
-          height: 36,
-          width: 18,
-          borderRadius: 36,
+          height: spacing._36,
+          width: spacing._18,
+          borderRadius: spacing._36,
         }}
         switchAccessibilityMode="icon"
       />
@@ -350,7 +350,7 @@ export const DemoToggle: Demo = {
         3 - style the input detail
       </Text>
 
-      <DemoDivider size={32} style={{ width: "100%" }} />
+      <DemoDivider size={spacing._32} style={{ width: "100%" }} />
 
       <View style={{ width: "100%" }}>
         <ControlledToggle
@@ -362,19 +362,19 @@ export const DemoToggle: Demo = {
           labelStyle={{
             backgroundColor: colors.error,
             color: colors.palette.neutral100,
-            paddingHorizontal: 5,
+            paddingHorizontal: spacing._5,
           }}
         />
       </View>
 
-      <DemoDivider size={24} style={{ width: "100%" }} />
+      <DemoDivider size={spacing._24} style={{ width: "100%" }} />
 
       <View style={{ width: "100%" }}>
         <ControlledToggle
           value
           variant="radio"
           labelPosition="left"
-          containerStyle={{ padding: 10, backgroundColor: colors.error }}
+          containerStyle={{ padding: spacing._10, backgroundColor: colors.error }}
           label="Or, style the entire container"
           status="error"
           labelStyle={{ color: colors.palette.neutral100 }}

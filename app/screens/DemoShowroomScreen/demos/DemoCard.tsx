@@ -34,7 +34,7 @@ export const DemoCard: Demo = {
         heading="Top (default)"
         content="All content is automatically aligned to the top."
         footer="Even the footer"
-        style={{ minHeight: 160 }}
+        style={{ minHeight: spacing._160 }}
       />
       <DemoDivider />
       <Card
@@ -43,7 +43,7 @@ export const DemoCard: Demo = {
         preset="reversed"
         content="Content is centered relative to the card's height."
         footer="Me too!"
-        style={{ minHeight: 160 }}
+        style={{ minHeight: spacing._160 }}
       />
       <DemoDivider />
       <Card
@@ -51,7 +51,7 @@ export const DemoCard: Demo = {
         verticalAlignment="space-between"
         content="All content is spaced out evenly."
         footer="I am where I want to be."
-        style={{ minHeight: 160 }}
+        style={{ minHeight: spacing._160 }}
       />
       <DemoDivider />
       <Card
@@ -60,7 +60,7 @@ export const DemoCard: Demo = {
         verticalAlignment="force-footer-bottom"
         content="This pushes the footer where it belongs."
         footer="I'm so lonely down here."
-        style={{ minHeight: 160 }}
+        style={{ minHeight: spacing._160 }}
       />
     </DemoUseCase>,
 
@@ -114,8 +114,8 @@ export const DemoCard: Demo = {
         verticalAlignment="center"
         RightComponent={
           <AutoImage
-            maxWidth={80}
-            maxHeight={60}
+            maxWidth={spacing._80}
+            maxHeight={spacing._60}
             style={{ alignSelf: "center" }}
             source={{
               uri: "https://user-images.githubusercontent.com/1775841/184508739-f90d0ce5-7219-42fd-a91f-3382d016eae0.png",
@@ -130,8 +130,8 @@ export const DemoCard: Demo = {
         verticalAlignment="center"
         LeftComponent={
           <AutoImage
-            maxWidth={80}
-            maxHeight={60}
+            maxWidth={spacing._80}
+            maxHeight={spacing._60}
             style={{ alignSelf: "center" }}
             source={{
               uri: "https://user-images.githubusercontent.com/1775841/184508739-f90d0ce5-7219-42fd-a91f-3382d016eae0.png",
@@ -155,7 +155,7 @@ export const DemoCard: Demo = {
           textDecorationColor: colors.error,
         }}
         style={{
-          shadowRadius: 5,
+          shadowRadius: spacing._5,
           shadowColor: colors.error,
           shadowOpacity: 0.5,
         }}

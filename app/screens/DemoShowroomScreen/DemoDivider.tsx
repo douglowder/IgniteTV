@@ -1,7 +1,7 @@
 /* eslint-disable  react-native/no-inline-styles */
 import React from "react"
 import { StyleProp, View, ViewStyle } from "react-native"
-import { colors } from "../../theme"
+import { colors, spacing } from "../../theme"
 
 interface DemoDividerProps {
   type?: "vertical" | "horizontal"
@@ -11,7 +11,12 @@ interface DemoDividerProps {
 }
 
 export function DemoDivider(props: DemoDividerProps) {
-  const { type = "horizontal", size = 10, line = false, style: $styleOverride } = props
+  const {
+    type = "horizontal",
+    size = spacing._10,
+    line = false,
+    style: $styleOverride,
+  } = props
 
   return (
     <View
@@ -27,16 +32,16 @@ export function DemoDivider(props: DemoDividerProps) {
           style={[
             $line,
             type === "horizontal" && {
-              width: 150,
-              height: 1,
-              marginStart: -75,
-              marginTop: -1,
+              width: spacing._150,
+              height: spacing._1,
+              marginStart: -spacing._75,
+              marginTop: -spacing._1,
             },
             type === "vertical" && {
-              height: 50,
-              width: 1,
-              marginTop: -25,
-              marginStart: -1,
+              height: spacing._50,
+              width: spacing._1,
+              marginTop: -spacing._25,
+              marginStart: -spacing._1,
             },
           ]}
         />

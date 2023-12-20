@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key, react-native/no-inline-styles */
 import React from "react"
 import { EmptyState } from "../../../components"
-import { colors } from "../../../theme"
+import { colors, spacing } from "../../../theme"
 import { DemoDivider } from "../DemoDivider"
 import { Demo } from "../DemoShowroomScreen"
 import { DemoUseCase } from "../DemoUseCase"
@@ -28,7 +28,7 @@ export const DemoEmptyState: Demo = {
         content="You can pass in any image source."
       />
 
-      <DemoDivider size={30} line />
+      <DemoDivider size={spacing._30} line />
 
       <EmptyState
         heading="Via `heading` Prop"
@@ -36,7 +36,7 @@ export const DemoEmptyState: Demo = {
         button="Via `button` Prop"
       />
 
-      <DemoDivider size={30} line />
+      <DemoDivider size={spacing._30} line />
 
       <EmptyState
         headingTx="demoShowroomScreen.demoViaSpecifiedTxProp"
@@ -51,8 +51,8 @@ export const DemoEmptyState: Demo = {
     <DemoUseCase name="Styling" description="The component can be styled easily.">
       <EmptyState
         preset="generic"
-        style={{ backgroundColor: colors.error, paddingVertical: 20 }}
-        imageStyle={{ height: 75, tintColor: colors.palette.neutral100 }}
+        style={{ backgroundColor: colors.error, paddingVertical: spacing._20 }}
+        imageStyle={{ height: spacing._75, tintColor: colors.palette.neutral100 }}
         ImageProps={{ resizeMode: "contain" }}
         headingStyle={{
           color: colors.palette.neutral100,

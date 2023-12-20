@@ -31,12 +31,12 @@ const $customTouchableStyle: ViewStyle = {
 }
 
 const $customContainerStyle: ViewStyle = {
-  borderTopWidth: 5,
+  borderTopWidth: spacing._5,
   borderTopColor: colors.palette.neutral100,
 }
 
 const $listStyle: ViewStyle = {
-  height: 148,
+  height: spacing._148,
   paddingHorizontal: spacing.xs,
   backgroundColor: colors.palette.neutral200,
 }
@@ -48,7 +48,7 @@ export const DemoListItem: Demo = {
     <DemoUseCase name="Height" description="The row can be different heights.">
       <ListItem topSeparator>Default height (56px)</ListItem>
 
-      <ListItem topSeparator height={100}>
+      <ListItem topSeparator height={spacing._100}>
         Custom height via `height` prop
       </ListItem>
 
@@ -67,13 +67,13 @@ export const DemoListItem: Demo = {
     >
       <ListItem topSeparator>Only top separator</ListItem>
 
-      <DemoDivider size={40} />
+      <DemoDivider size={spacing._40} />
 
       <ListItem topSeparator bottomSeparator>
         Top and bottom separators
       </ListItem>
 
-      <DemoDivider size={40} />
+      <DemoDivider size={spacing._40} />
 
       <ListItem bottomSeparator>Only bottom separator</ListItem>
     </DemoUseCase>,

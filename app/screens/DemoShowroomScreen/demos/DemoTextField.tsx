@@ -56,7 +56,7 @@ export const DemoTextField: Demo = {
         placeholder="Text goes here"
       />
 
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
 
       <TextField
         status="error"
@@ -66,7 +66,7 @@ export const DemoTextField: Demo = {
         placeholder="Text goes here"
       />
 
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
 
       <TextField
         status="disabled"
@@ -87,7 +87,7 @@ export const DemoTextField: Demo = {
         placeholder="Via `placeholder` prop"
       />
 
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
 
       <TextField
         labelTx="demoShowroomScreen.demoViaSpecifiedTxProp"
@@ -98,7 +98,7 @@ export const DemoTextField: Demo = {
         placeholderTxOptions={{ prop: "placeholder" }}
       />
 
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
 
       <TextField
         label="RightAccessory"
@@ -107,7 +107,7 @@ export const DemoTextField: Demo = {
         RightAccessory={(props) => <Icon icon="ladybug" containerStyle={props.style} size={21} />}
       />
 
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
 
       <TextField
         label="LeftAccessory"
@@ -116,7 +116,7 @@ export const DemoTextField: Demo = {
         LeftAccessory={(props) => <Icon icon="ladybug" containerStyle={props.style} size={21} />}
       />
 
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
 
       <TextField
         label="Supports Multiline"
@@ -135,7 +135,7 @@ export const DemoTextField: Demo = {
         style={$customInputStyle}
       />
 
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
 
       <TextField
         label="Style Input Wrapper"
@@ -145,7 +145,7 @@ export const DemoTextField: Demo = {
         style={$customInputStyle}
       />
 
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
 
       <TextField
         label="Style Container"
@@ -156,7 +156,7 @@ export const DemoTextField: Demo = {
         inputWrapperStyle={$customInputWrapperStyle}
       />
 
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
 
       <TextField
         label="Style Label & Helper"
@@ -169,7 +169,7 @@ export const DemoTextField: Demo = {
         LabelTextProps={{ style: $customLabelAndHelperStyle }}
       />
 
-      <DemoDivider size={24} />
+      <DemoDivider size={spacing._24} />
 
       <TextField
         label="Style Accessories"
@@ -177,14 +177,19 @@ export const DemoTextField: Demo = {
         value="Aute nisi dolore fugiat anim mollit nulla ex minim ipsum ex elit."
         style={$customInputWithAbsoluteAccessoriesStyle}
         LeftAccessory={() => (
-          <Icon icon="ladybug" containerStyle={$customLeftAccessoryStyle} color="white" size={41} />
+          <Icon
+            icon="ladybug"
+            containerStyle={$customLeftAccessoryStyle}
+            color="white"
+            size={spacing._41}
+          />
         )}
         RightAccessory={() => (
           <Icon
             icon="ladybug"
             containerStyle={$customRightAccessoryStyle}
             color="white"
-            size={41}
+            size={spacing._41}
           />
         )}
       />
