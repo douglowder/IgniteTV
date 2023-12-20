@@ -54,6 +54,12 @@
       "bundler": "metro"
     },
     "plugins": [
+      [
+        "@react-native-tvos/config-tv",
+        {
+          "showVerboseWarnings": true
+        }
+      ],
       "expo-localization",
       [
         "expo-build-properties",
